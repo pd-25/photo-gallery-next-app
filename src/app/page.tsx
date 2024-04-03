@@ -1,95 +1,102 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 
+import Header from "./components/frontend/Header";
+import Photos from "./components/frontend/common/Photos";
+import HeroSection from "./components/frontend/homepage/HeroSection";
 export default function Home() {
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <>
+     
+        <HeroSection />
+       <Photos />
+        <footer className="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+          <div className="container-fluid tm-container-small">
+            <div className="row">
+              <div className="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                <h3 className="tm-text-primary mb-4 tm-footer-title">
+                  About Catalog-Z
+                </h3>
+                <p>
+                  Catalog-Z is free{" "}
+                  <a rel="sponsored" href="https://v5.getbootstrap.com/">
+                    Bootstrap 5
+                  </a>{" "}
+                  Alpha 2 HTML Template for video and photo websites. You can freely
+                  use this TemplateMo layout for a front-end integration with any kind
+                  of CMS website.
+                </p>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                <h3 className="tm-text-primary mb-4 tm-footer-title">Our Links</h3>
+                <ul className="tm-footer-links pl-0">
+                  <li>
+                    <a href="#">Advertise</a>
+                  </li>
+                  <li>
+                    <a href="#">Support</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Company</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                <ul className="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                  <li className="mb-2">
+                    <a href="https://facebook.com">
+                      <i className="fab fa-facebook" />
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="https://twitter.com">
+                      <i className="fab fa-twitter" />
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="https://instagram.com">
+                      <i className="fab fa-instagram" />
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="https://pinterest.com">
+                      <i className="fab fa-pinterest" />
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" className="tm-text-gray text-right d-block mb-2">
+                  Terms of Use
+                </a>
+                <a href="#" className="tm-text-gray text-right d-block">
+                  Privacy Policy
+                </a>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-8 col-md-7 col-12 px-5 mb-3">
+                Copyright 2020 Catalog-Z Company. All rights reserved.
+              </div>
+              <div className="col-lg-4 col-md-5 col-12 px-5 text-right">
+                Designed by{" "}
+                <a
+                  href="https://templatemo.com"
+                  className="tm-text-gray"
+                  rel="sponsored"
+                  target="_parent"
+                >
+                  TemplateMo
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <script src="js/plugins.js"></script>
+    
+      </>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+   
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   );
 }
