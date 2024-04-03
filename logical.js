@@ -28,7 +28,7 @@ function promisify(fn, hasCallback = true) {
   function getData(callback) {
     setTimeout(() => {
       const error = null;
-      const data = { message: "Data fetched successfully" };
+      const data = { message: "Success res" };
       callback(error, data);
     }, 1000);
   }
