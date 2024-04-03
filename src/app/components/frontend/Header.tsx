@@ -3,7 +3,7 @@ export default function Header() {
         <>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Photo gallery</title>
+            <title>Photo gallery by pradipta</title>
             <link rel="stylesheet" href="/css/bootstrap.min.css" />
             <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
             <link rel="stylesheet" href="/css/templatemo-style.css" />
